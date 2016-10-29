@@ -2,21 +2,6 @@
  * Created by arkadiy on 29.10.16.
  */
 
-// function Hero(props) {
-//     let count = 0;
-//     function handleClick() {
-//         count += 1;
-//     }
-//     return (
-//         <div className="container">
-//             <div className="count">{count}</div>
-//             <img src={props.imageUrl} onClick={ handleClick }/>
-//             <h1>{props.title}</h1>
-//             <p>{props.subtitle}</p>
-//         </div>
-//     );
-// }
-
 let Hero = React.createClass({
     getInitialState: function () {
         return {
@@ -24,8 +9,10 @@ let Hero = React.createClass({
         };
     },
 
-    handlerClick: function () {
-        this.state.count += 1;
+    handleClick: function () {
+        this.setState({
+            count: this.state.count + 1
+        });
     },
 
     render: function () {
