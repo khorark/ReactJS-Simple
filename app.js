@@ -6,5 +6,6 @@ let title = React.createElement('h1', null, 'React!');
 let subtitle = React.createElement('p', null, 'Библиотека для создания пользовательского интерфейса');
 let container = React.createElement('div', { className: 'container' }, image, title, subtitle);
 
+console.log('container', container);
 
 ReactDOM.render(container, document.getElementById('root'));

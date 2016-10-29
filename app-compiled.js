@@ -8,6 +8,8 @@ var title = React.createElement('h1', null, 'React!');
 var subtitle = React.createElement('p', null, 'Библиотека для создания пользовательского интерфейса');
 var container = React.createElement('div', { className: 'container' }, image, title, subtitle);
 
+console.log('container', container);
+
 ReactDOM.render(container, document.getElementById('root'));
 
 //# sourceMappingURL=app-compiled.js.map
