@@ -18,6 +18,7 @@ webpackConfig = {
         path: './static/build/',
         library: '[name]'
     },
+    watch: true,
     resolve: {
         extensions: ['', '.js', '.jsx']
     },
